@@ -1,0 +1,56 @@
+---
+:site_name: University of York live buses
+
+:buses: # bus numbers serving route
+- '4'
+- '44'
+
+:directions: # name of two directions of route
+- east
+- west
+
+:areas:
+- :code: railway # short code for area
+  :name: York Railway Station # user-friendly name of area
+  :atcocodes:
+    east: # entries named same as in :directions:
+    - 3290YYA00145
+    west:
+    - 3290YYA00133
+    - 3290YYA00134
+
+- :code: city_centre
+  :name: York City Centre
+  :atcocodes:
+    east:
+    - 3290YYA01672
+    - 3290YYA00168
+    west:
+    - 3290YYA00103
+    - 3290YYA00167
+
+- :code: hes_road
+  :name: Heslington Road
+  :atcocodes:
+    east:
+    - 3290YYA00188
+    west:
+    - 3290YYA00186
+
+- :code: hes_west
+  :name: Heslington West Campus
+  :atcocodes:
+    east:
+    - 3290YYA00282
+    west:
+    - 3290YYA00279
+
+- :code: hes_east
+  :name: Heslington East Campus
+  :atcocodes:
+    east:
+    - 3290YYA03630
+    - 3290YYA01011
+    west:
+    - 3290YYA03646
+    - 3290YYA03608
