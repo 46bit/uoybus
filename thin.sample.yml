@@ -1,0 +1,15 @@
+---
+chdir: /var/www/uoyb.us/webroot
+environment: production
+address: 0.0.0.0
+port: 8010
+timeout: 20
+log: /var/www/uoyb.us/logs/thin.log
+pid: /var/www/uoyb.us/webroot/tmp/pids/thin3.pid
+max_conns: 1024
+max_persistent_conns: 512
+require: []
+wait: 30
+servers: 3
+daemonize: true
+rackup: /var/www/uoyb.us/webroot/config.ru

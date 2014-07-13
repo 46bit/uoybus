@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: #fff;
+	background: #474747;
+	font: 14px "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.box {
+	color: #000;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	text-align: left;
+	padding: 30px 0 30px 40px;
+}
+@media only screen and (max-width: 400px) {
+	.box {
+		border-radius: 0;
+	}
+}
+.box a {
+	color: #04468a;
+}
+.box h2 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 30px;
+	padding: 10px 40px 34px 0;
+	text-align: center;
+}
+.box h2 em {
+	font-style: normal;
+	color: #04468a;
+	font-weight: 400;
+}
+.box p {
+	margin-bottom: 10px;
+}
+
+.header {
+	padding: 0;
+}
+.header .logo {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 85px;
+}
+
+.footer {
+	color: #fff;
+	position: static;
+	margin-top: -10px;
+	background: #bf1f0b;
+	padding: 33px 40px 23px;
+}
+.footer a {
+	color: #fff;
+	font-weight: 600;
+}
+.footer p {
+	margin-bottom: 0;
+	display: inline-block;
+	line-height: 28px;
+}
+.footer .rights {
+	float: left;
+}
+.footer .sources {
+	float: right;
+}
+
+.stops {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.stops p {
+	margin-bottom: 0;
+}
+.stops--stop {
+	min-height: 52px;
+	padding: 0 0 10px 53px;
+	overflow: hidden;
+	background: url(/img/stop-pill.png) no-repeat 0 -13px;
+}
+.stops--stop__last {
+	min-height: 27px;
+	background-image: url(/img/stop-pill-last.png);
+}
+.stops--stop__skipped {
+	background-image: url(/img/stop-pill-skipped.png);
+}
+.stops--stop__skipped.stops--stop__last {
+	background-image: url(/img/stop-pill-skipped-last.png);
+}
+.stops--stop strong {
+	color: #04468a;
+}
+.stops--stop--name {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 27px;
+}
+.stops--stop--name span {
+	color: #555;
+	padding-left: 18px;
+	font: 18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.stops--stop--infos {
+	list-style: none;
+	line-height: 20px;
+}
+.stops--stop--infos__horizontal .stops--stop--info {
+	/*float: left;*/
+	/*padding-right: 20px;*/
+}
+.stops--stop--infos__horizontal .stops--stop--info__last {
+	padding-right: 0;
+}
+.stops--stop--infos__vertical {
+
+}

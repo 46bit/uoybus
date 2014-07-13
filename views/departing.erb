@@ -1,0 +1,10 @@
+<section class="wrapper box">
+	<h2>Departing from&hellip;</h2>
+	<ol class="stops departures">
+		<% @areas.each_with_index do |area, i| %>
+			<li class="stops--stop <% if area == @areas.last %>stops--stop__last<% end %>">
+				<a class="stops--stop--name" href="/<%= area[:code] %>"><%= area[:name] %> <span>&rarr;</span></a>
+			</li>
+		<% end %>
+	</ol>
+</section>

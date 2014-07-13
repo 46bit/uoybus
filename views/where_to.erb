@@ -1,0 +1,11 @@
+<section class="wrapper box">
+	<h2>Going towards&hellip;</h2>
+	<ol class="stops directions">
+		<li class="stops--stop stops--stop__skipped">
+			<a class="stops--stop--name" href="/<%= @area[:code] %>/<%= @directions.last %>"><%= @areas.first[:name] %> <span>&rarr;</span></a>
+		</li>
+		<li class="stops--stop stops--stop__skipped stops--stop__last">
+			<a class="stops--stop--name" href="/<%= @area[:code] %>/<%= @directions.first %>"><%= @areas.last[:name] %> <span>&rarr;</span></a>
+		</li>
+	</ol>
+</section>

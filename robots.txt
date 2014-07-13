@@ -1,0 +1,3 @@
+# Try to stop bots from consuming API credit.
+User-agent: *
+Disallow: /*/*

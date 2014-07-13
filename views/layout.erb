@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @site_name %></title>
+    <meta name="viewport" content="initial-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi">
+    <link rel="stylesheet" type="text/css" href="/css/master.css">
+    <% if @typekit[:id] %>
+      <script type="text/javascript" src="//use.typekit.net/<%= @typekit[:id] %>.js"></script>
+	  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<% end %>
+  </head>
+  <body>
+    <header class="wrapper header">
+      <a class="logo" href="/"><%= @site_name %></a>
+    </header>
+    <%= yield %>
+    <footer class="wrapper box footer">
+      <p class="rights"><a href="https://github.com/46bit/threebuses">ThreeBuses</a></p>
+      <p class="sources">Data by <a href="http://transportapi.com">TransportAPI</a></p>
+    </footer>
+  </body>
+</html>

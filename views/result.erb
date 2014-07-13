@@ -1,0 +1,40 @@
+<section class="wrapper box">
+	<h2><em><%= @area[:name] %></em> towards <br /><em><%= @end_area[:name] %></em></h2>
+	<ol class="stops directions">
+		<li class="stops--stop stops--stop__skipped">
+			<p class="stops--stop--name"><%= @area[:name] %></p>
+			<ul class="stops--stop--infos stops--stop--infos__vertical">
+				<% if @departure_times.length == 0 %>
+					<li class="stops--stop--info">
+						No departure information available.
+					</li>
+				<% end %>
+				<% @departure_times.each_pair do |bus, bus_departure_times| %>
+					<li class="stops--stop--info">
+						#<%= bus %> in
+						<% bus_departure_times.each do |bus_departure_time| %>
+							<%
+							formatted_time = "<strong>#{bus_departure_time}</strong>"
+							if bus_departure_time != bus_departure_times.last
+								formatted_time << ","
+							end
+							%>
+							<%= formatted_time %>
+						<% end %>
+						mins
+					</li>
+				<% end %>
+			</ul>
+		</li>
+		<li class="stops--stop stops--stop__skipped stops--stop__last">
+			<p class="stops--stop--name"><%= @end_area[:name] %></p>
+			<ul class="stops--stop--infos stops--stop--infos__vertical">
+				<!--
+				<li class="stops--stop--info">About <strong>20 minutes by bus</strong></p>
+				<li class="stops--stop--info__last">Or a <strong>sunny 40 minute walk</strong></p>
+				-->
+			</ul>
+		</li>
+	</ol>
+	<p>Times in brackets are estimated from the timetable.</p>
+</section>
