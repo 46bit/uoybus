@@ -2,7 +2,7 @@
 :site_name: University of York live buses
 
 :buses: # bus numbers serving route
-- '4'
+- '66'
 - '44'
 
 :directions: # name of two directions of route
@@ -23,11 +23,9 @@
   :name: York City Centre
   :atcocodes:
     east:
-    - 3290YYA01672
-    - 3290YYA00168
+    - 3290YYA00095
     west:
     - 3290YYA00103
-    - 3290YYA00167
 
 - :code: hes_road
   :name: Heslington Road
@@ -52,5 +50,5 @@
     - 3290YYA03630
     - 3290YYA01011
     west:
-    - 3290YYA03646
+    - 3290YYA03647
     - 3290YYA03608
